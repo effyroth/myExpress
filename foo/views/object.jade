@@ -1,0 +1,6 @@
+ul
+	- for(index in list)
+		li #{index} .
+		ul 
+			- for(var a in list[index])
+				li #{a} : #{list[index][a]}
